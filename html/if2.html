@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title> 멀티캠퍼스 웹개발 수업</title>
+    </head>
+    <body>
+        <h1>if문 연습1</h1>
+        <script>
+            /* null이 아닌 경우에만 아래 조건문 실행,
+            null인 경우에는 입력 취소 메시지 실행 */
+            var num = prompt("숫자를 입력하세요..!");
+            if(num !== "") {
+                if (num % 2 === 0) {
+                    alert("짝수입니다!");
+                 } else {
+                    alert("홀수입니다!");
+                 }    
+            } else {
+                alert("입력취소됨");
+             }  
+        </script>
+    </body>
+</html>

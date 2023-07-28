@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</html>
+    <meta charset="UTF">
+    <title>사용자 정의 함수</title>
+</head>
+<body>
+    <h1>시작해볼까요?</h1>
+    <p>let을 활용하자!</p>
+    <script>
+        
+        function calcSum(n) {
+            let sum = 0; // 여러 개의 변수를 선언할 때 재선언할 수 없음. 
+            for(let i = 1; i < n + 1; i++) {
+                sum += i;
+            }
+            sum = 100; // 변수 재할당
+            console.log(sum);
+        }
+        calcSum(100);
+        
+        var x = 10;
+        function displayNumber() {
+            console.log("x is " + x);
+            console.log("y is " + y); // 호이스팅이 안됨.
+            let y = 20;
+        }
+        displayNumber();
+    </script>
+</body>
+</html>
